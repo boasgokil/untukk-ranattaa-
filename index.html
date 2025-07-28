@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Sayang</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffe4ec, #e0bbf7);
+      color: #333;
+      overflow-x: hidden;
+    }
+    .page {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .active {
+      display: flex;
+    }
+    h1, h2 {
+      font-family: 'Dancing Script', cursive;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 90%;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff85c1;
+    }
+ .hearts span {
+  position: absolute;
+  opacity: 0.8;
+}
+
+.hearts-default span {
+  color: pink;
+  font-size: 2em;
+  animation: floatUp 6s infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(1); }
+  100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+}
+
+.hearts-sad span {
+  color: #00bfff;
+  font-size: 1.5em;
+  animation: fallDown 5s infinite;
+}
+
+@keyframes fallDown {
+  0% { transform: translateY(-10vh); opacity: 0.9; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.hearts-angry span {
+  color: orangered;
+  font-size: 1.8em;
+  animation: floatShake 5s infinite;
+}
+
+@keyframes floatShake {
+  0% { transform: translateY(100vh) rotate(0deg); }
+  25% { transform: translateY(75vh) rotate(10deg); }
+  50% { transform: translateY(50vh) rotate(-10deg); }
+  75% { transform: translateY(25vh) rotate(5deg); }
+  100% { transform: translateY(0vh) rotate(0deg); opacity: 0; }
+}
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+<div class="hearts hearts-default"></div>
+<div class="hearts hearts-sad" style="display: none;"></div>
+<div class="hearts hearts-angry" style="display: none;"></div>
+  <audio autoplay loop controls>
+    <source src="Sal Priadi - Serta Mulia (Official Lyric Video) [q6on6wvbvwk].mp3" type="audio/mp3">
+    Browser tidak mendukung audio.
+  </audio>  <div class="hearts"></div>  <div id="page1" class="page active">
+    <h1>sweet 17th sayangggg💖</h1>
+    <img src="1a546758d4a88f2ed56ea2a9afa48f00.gif" alt="Gift">
+    <p>aku adaa hadiah buatt kamuu<br> kamu mauu apaa enggaa nihh?</p>
+    <button onclick="showPage('page2')">mauuu 💖</button>
+    <button onclick="showPage('page3')">enggaaa 😝</button>
+  </div>  <div id="page2" class="page">
+    <h2>yeayy kamu mauuu</h2>
+    <img src="88149b0400750578f4d07d9bc3fb0fee.gif" width="50%" height="50%" alt="Photo 2">
+    <p>inii hadiahnyaa wkwkwk...happy happy happyyy<br>
+    lanjutt yakkk<br></p>
+    <button onclick="showPage('page4')">iyaaa</button>
+  </div>  <div id="page3" class="page">
+    <h2>kok gamauu sihhh😡</h2>
+    <img src="gamau.gif" width="50%" height="50%"  alt="Photo 3">
+    <p>kalauu gamauu emote lovenyaa hilang loh nantii</p>
+    <button onclick="showPage('page4')">mauuu bgtt💖</button>
+    <button onclick="showPage('page11')">enggaaa wlee😝</button>
+  </div> <div id="page11" class="page">
+   <h2>kann beneran hilangg </h2>
+    <img src="sad-icegif-10.gif" width="50%" height="50%"  alt="Gift">
+    <p>kalauu gamauu lagii nanti aku sedihh</p>
+    <button onclick="showPage('page2')">yaudah mauu </button>
+    <button onclick="showPage('page12')">tetepp gamauu😝</button>
+   </div> <div id="page12" class="page">
+   <h2>kok tetepp gamauu sii...kamu ga sayang aku yaa</h2>
+    <img src="peach-peachcry.gif" width="50%" height="50%"  alt="Gift">
+    <p>yaudahh hadiahnyaa ndaa jadii kalau gituu</p>
+    <button onclick="showPage('page2')">yadehh mauu </button>
+    <button onclick="showPage('page13')">gamauu</button>
+   </div>  <div id="page13" class="page">
+    <h2>IHH HARUS MAUU POKOKNYAA!!</h2>
+    <img src="peach-goma.gif" width="50%" height="50%"  alt="Photo 2">
+    <p>YAHHH PILIHANNYA CUMA SATUU SEKARANGG HAHAHHA</p>
+    <button onclick="showPage('page2')" position="right">iyaaa</button>
+    <button onclick="showPage('page2')" position="bottom">IYAAA</button>
+    <button onclick="showPage('page2')" position="left">iyaaaaaa</button>
+    <button onclick="showPage('page2')" position="right">iyaaa</button>
+    <button onclick="showPage('page2')" position="bottom">IYAAA</button>
+    <button onclick="showPage('page2')" position="left">iyaaaaaa</button>
+  </div>  <div id="page4" class="page">
+    <h2>inii hadiahhnyaaa wkwkwk😆</h2>
+    <img src="IMG_20250415_152631_066.jpg" width="50%" height="50%"  alt="Photo 4">
+    <p>hehee guaa kecee darii lahirr...lucukkk💖</p>
+    <button onclick="showPage('page5')">Lanjut</button>
+  </div>  <div id="page5" class="page">
+    <h2>lagii nihhh</h2>
+    <img src="IMG-20230913-WA0035.jpg" width="50%" height="50%"  alt="Photo 5">
+    <p>hahaa ini pap pertama dari kamuuu<br>
+    lucuukk cantikkk manissss pokoknyaaa...lovvv bgttt💖</p>
+    <button onclick="showPage('page6')">Lanjut</button>
+  </div>  <div id="page6" class="page">
+    <h2>ehh cantikk bangett yang pakai kebayaa siapaa yaa iniii</h2>
+    <img src="WhatsApp Image 2025-07-27 at 5.27.38 PM.jpeg" width="50%" height="50%"  alt="Photo 6">
+    <p>hahaha inii salah satu skinmu yang akuu sukaa...<br>
+    waktuu kamuu pakaii bajuu iniii cantikkk bangett sayanggg bikinn salting tingkahh ahahaha</p>
+    <button onclick="showPage('page7')">Lanjut</button>
+  </div>  <div id="page7" class="page">
+    <h2>lahh nyempill lagii inii </h2>
+    <img src="WhatsApp Image 2025-07-27 at 5.28.55 PM.jpeg" width="50%" height="50%"  alt="Photo 7">
+    <p>kecee badaii wkwkwk<br>
+    udahh yaa seriuss sekaranggg</p>
+    <button onclick="showPage('page8')">Lanjut</button>
+  </div>  <div id="page8" class="page">
+    <h2>tapii boongg</h2>
+    <img src="ungger.jpeg" width="50%" height="50%"  alt="Photo 8">
+    <p>ungggrrr...lucuuukk bangettt sii kamuu sayanggggg<br>
+    udahhh pokonyaa sekarangg seriusss!!</p>
+    <button onclick="showPage('page9')">Lanjut</button>
+  </div>  <div id="page9" class="page">
+    <h2>ehh ketemuu fotoo inii lagiii</h2>
+    <img src="IMG-20231102-WA0025.jpg" width="50%" height="50%" " alt="Photo 9">
+    <p>is this angell? look at how beautifull, sweettt, cutee, gorgeous, and stunning. Is she the one meant for me? Aminnnn 💕 </p>
+    <button onclick="showPage('page10')">Lanjut</button>
+  </div>  <div id="page10" class="page">
+    <h2>mett ultahh yaa sayangggg 💖🎂</h2>
+    <img src="WhatsApp Image 2025-07-27 at 4.18.29 PM (1).jpeg" width="50%" height="50%" alt="Photo 10">
+      <img src="WhatsApp Image 2025-07-27 at 4.18.29 PM.jpeg" width="50%" height="50%" alt="Photo 11">
+        <img src="WhatsApp Image 2025-07-27 at 4.18.30 PM.jpeg" width="50%" height="50%" alt="Photo 12">
+          <p>sweet 17th sayanggku cintakuu manissku duniakuu! 💕<br>
+    selamat ulang tahun untuk yang ke 17 semoga apa yang kamu doakan dan kamu harapkan dapat segera tercapaii,
+    doaku untukmu semoga kamu panjang umurr sehatt selaluu tambahh cantikk tambahh maniss tambahh lucuukkk makin tinggii.
+    di umur yang ke 17 ini semoga kamu diberikan jalan dan kemudahan untuk menempuh dan menata masa depan yang kamu harapkan
+    pokoknyaa semangatt teruss sayangg buat kedepannnyaa<br>
+    makasiii yaa sayangg udah menjadi bagian dari hidupku mewarnai hari hariku, aku sangat bersyukur punyaa kamuu😘
+    GBUU</p>
+    <p>
+      <br>btw aku juga udah buatin playlist buat kamu dengerin pas lagi santai atau lagi nugass semoga kamu sukaa yaa
+      <br>playlistnya ada di <a href="https://open.spotify.com/playlist/4Qr3U2s1PGj6UHept0UymX?si=ecdf022f1fa844e9" target="_blank">sinii sayangg</a>
+    </p>
+   
+    <p style="margin-top: 30px; font-size: 0.9em;">— boas </p>
+  </div> <script>
+  // Tambah animasi ❤️ default
+  const heartsDefault = document.querySelector(".hearts-default");
+  for (let i = 0; i < 30; i++) {
+    const heart = document.createElement("span");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (Math.random() * 5 + 3) + "s";
+    heart.style.fontSize = (Math.random() * 20 + 10) + "px";
+    heartsDefault.appendChild(heart);
+  }
+
+  // Tambah animasi 😭 sedih
+  const heartsSad = document.querySelector(".hearts-sad");
+  for (let i = 0; i < 30; i++) {
+    const tear = document.createElement("span");
+    tear.innerHTML = "😭";
+    tear.style.left = Math.random() * 100 + "vw";
+    tear.style.animationDuration = (Math.random() * 4 + 2) + "s";
+    tear.style.fontSize = (Math.random() * 15 + 10) + "px";
+    heartsSad.appendChild(tear);
+  }
+
+  // Tambah animasi 😡 marah lucu
+  const heartsAngry = document.querySelector(".hearts-angry");
+  for (let i = 0; i < 30; i++) {
+    const angry = document.createElement("span");
+    angry.innerHTML = "😤";
+    angry.style.left = Math.random() * 100 + "vw";
+    angry.style.animationDuration = (Math.random() * 4 + 2) + "s";
+    angry.style.fontSize = (Math.random() * 18 + 12) + "px";
+    heartsAngry.appendChild(angry);
+  }
+
+  function showPage(pageId) {
+    const pages = document.querySelectorAll(".page");
+    pages.forEach(page => page.style.display = "none");
+    document.getElementById(pageId).style.display = "block";
+
+    // Atur tampilan animasi
+    const show = (el, status) => el.style.display = status ? "block" : "none";
+    const is = (id) => pageId === id;
+
+    show(heartsDefault, !(is("page11") || is("page12") || is("page13")));
+    show(heartsSad, is("page12"));
+    show(heartsAngry, is("page13"));
+  }
+</script></body>
+</html>
